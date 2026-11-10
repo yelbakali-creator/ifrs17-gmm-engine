@@ -1,5 +1,7 @@
 # IFRS 17 General Measurement Model Engine: from Cash Flows to Profit or Loss
 
+[![tests](https://github.com/yelbakali-creator/ifrs17-gmm-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/yelbakali-creator/ifrs17-gmm-engine/actions/workflows/tests.yml)
+
 A from-scratch Python implementation of the IFRS 17 General Measurement Model (GMM) for two groups of 10-year term life contracts, one profitable and one onerous, followed year by year from initial recognition to maturity:
 
 - **Measurement:** best estimate liability (BEL), a confidence-level risk adjustment (RA) and the contractual service margin (CSM), or a loss component for the onerous group.
@@ -100,6 +102,7 @@ Best-estimate mortality is based on real data: England & Wales males, 2011, from
 
 ```bash
 pip install -r requirements.txt
+python -m pytest       # 4 automated validation tests
 python run_study.py
 ```
 
